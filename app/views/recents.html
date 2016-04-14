@@ -1,0 +1,29 @@
+<div class="recents-view" data-ng-show="!stateSelected">
+	<div class="title-box">
+		<h1>Recientes </h1>
+		<button type="button" class="btn btn-default btn-lg search-btn">
+		<span class="glyphicon glyphicon-search pull-right" aria-hidden="true"></span>
+		</button>
+		<img src="images/titles/recent-title.jpg" alt="">
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="navigation-card" data-ng-repeat="state in stateList" data-ng-click="stateDetail($index)">
+				<span>{{state.name}}</span>
+				<img src="{{state.url}}" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="bottom-nav">
+		<div class="nav-ico home-ico"></div>
+		<div class="nav-ico badge-ico"></div>
+		<div class="nav-ico favourite-ico"></div>
+		<div class="nav-ico user-ico"></div>
+	</div>
+</div>
+<div data-ng-switch on="stateSelected">
+	<div class="animate-switch" data-ng-switch-when="true">
+		<div data-ng-include="'views/state-detail.html'"></div>
+	</div>
+</div>

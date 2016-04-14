@@ -1,0 +1,333 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+.container{
+  padding:0px !important;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*Detail-view*/
+
+.recents-view h1{
+    width: 135px;
+    text-align: center;
+    display: block;
+    margin: 50px auto 0 auto;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bolder;
+    color:#007cba;
+}
+
+.title-box{
+  width:100%;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-box img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -50px;
+  margin-top: -50px;
+  width:150%;
+  z-index: -1;
+  -webkit-transition:all ease 0.5s;
+  transition:all ease 0.5s;
+}
+
+.search-btn{
+      position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 16px;
+    color: white;
+    background-color: #40b4e5;
+    border: none;
+}
+
+.navigation-card{
+      margin-top: 1px;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+}
+
+.navigation-card span{
+  display: block;
+  width: 60%;
+  text-align: center;
+  background: white;
+  color: #007cba;
+  padding: 10px 15px 10px 15px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 1000;
+  margin: 45px auto 0 auto;
+}
+
+.navigation-card img{
+  width: 130%;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.bottom-nav{
+  height: 60px;
+  background-color:#f3f3f3;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.nav-ico{
+  float: left;
+  width: 45px; 
+  height:45px;
+  background-color: #3fae2a;
+    mask-size: 145%;
+  -webkit-mask-size: 145%;
+  mask-position:-10px -18px;
+  -webkit-mask-position: -10px -18px;
+  margin-top: 15px;
+}
+
+.home-ico{
+  mask-image: url(../images/icos/Ico_Home.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Home.svg);
+
+}
+
+.badge-ico{
+  mask-image: url(../images/icos/Ico_Destacados.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Destacados.svg);
+}
+
+.favourite-ico{
+  mask-image: url(../images/icos/Ico_Estrella.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Estrella.svg);
+}
+
+.user-ico{
+  mask-image: url(../images/icos/Ico_Perfil.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Perfil.svg);
+}
+
+.estate-card{
+  width: 100%;
+  margin-top:1px;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+}
+
+.estate-card img{
+  width: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.back-ico{
+  float: left;
+  width: 25px;
+  height: 25px;
+  background-color:#007cba;
+  mask-image: url(../images/icos/Ico_Regresar.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Regresar.svg);
+   mask-size: 145%;
+  -webkit-mask-size: 220%;
+  -webkit-mask-position: -14px -14px;
+  mask-position: -14px -14px;
+}
+
+.pref-ico{
+  float: left;
+  width: 55px;
+  height: 55px;
+  background-color:#007cba;
+  mask-image: url(../images/icos/Ico_Preferencias.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Preferencias.svg);
+   mask-size: 140%;
+  -webkit-mask-size: 140%;
+  margin-right: 20px
+}
+
+.like-ico{
+    width: 55px;
+    height: 55px;
+    margin-left: -14px;
+    background-color: #b3b2b1;
+    mask-image: url(../images/icos/Ico_Megusta.svg);
+    -webkit-mask-image: url(../images/icos/Ico_Megusta.svg);
+    mask-size: 140%;
+    -webkit-mask-size: 116%;
+    margin-top: -14px;
+    -webkit-transition:all ease 0.5s;
+  transition:all ease 0.5s;
+}
+
+.like-ico.active{
+  background-color: #007cba;
+}
+
+.estate-specs{
+  height: 55px;
+  width: 100%;
+  position:absolute;
+  bottom:0;
+  left: 0;
+  background:rgba(254,254,254,.8);
+  z-index: 1;
+}
+
+.estate-specs .home-ico{
+  background-color: #007cba;
+  height: 50px;
+  width: 45px;
+  margin-left: 0px;
+  margin-top:-5px;
+  mask-image: url(../images/icos/Ico_Casa.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Casa.svg);
+   mask-size: 145%;
+  -webkit-mask-size: 145%;
+}
+
+.estate-specs h2{
+  font-size: 12px;
+  color: #007cba;
+  margin-left: 15px;
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
+.estate-specs h3{
+ color: #333;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px
+}
+
+.detail-title{
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 55px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.like-ico-wrapper{
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: -19px;
+  right: 0px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 19px;
+  right: 20px;
+}
+
+.list-header{
+  height: 65px;
+  width: 100%;
+  position: relative;
+}

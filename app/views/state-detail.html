@@ -1,0 +1,30 @@
+<div class="detail-view">
+	<div class="col-sm-12">
+		<div class="row">
+			<div class="list-header">
+				<div class="back-ico"></div>
+				<h1 class="pull-left detail-title">{{selectedState.name}}</h1>
+				<div class="pref-ico pull-right"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="estate-card" data-ng-repeat="estate in estatesList" data-ng-click="munDetail($index)">
+				<img src="{{estate.cover}}" alt="">
+				<div class="estate-specs">
+					<div class="home-ico pull-left"></div>
+					<h2 class="pull-left">{{estate.municipality}}</h2>
+					<h3 class="pull-left">{{estate.dimension}} m2, {{estate.rooms}} recámaras, {{estate.bathrooms}} baños</h3>
+					<div class="like-ico-wrapper" >
+						<div class="like-ico" data-ng-class="{active:estate.starred}" data-ng-click="toggleActive(estate, $event)"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-nav">
+		<div class="nav-ico home-ico"></div>
+		<div class="nav-ico badge-ico"></div>
+		<div class="nav-ico favourite-ico"></div>
+		<div class="nav-ico user-ico"></div>
+	</div>
+</div>
