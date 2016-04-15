@@ -289,6 +289,13 @@ module.exports = function (grunt) {
     },
 
     svgmin: {
+      options: {
+        plugins: [{
+          collapseGroups: false
+        }, {
+          removeUnknownsAndDefaults: false
+        }]
+      },
       dist: {
         files: [{
           expand: true,
@@ -362,7 +369,9 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'images/{,*/}*.{svg}',
+            '{,*/}*.{png,jpg,jpeg,gif}'
           ]
         }, {
           expand: true,
@@ -393,9 +402,7 @@ module.exports = function (grunt) {
         'copy:styles'
       ],
       dist: [
-        'copy:styles',
-        'imagemin',
-        'svgmin'
+        'copy:styles'
       ]
     },
 
