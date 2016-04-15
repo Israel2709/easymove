@@ -734,3 +734,24 @@ body {
   font-size: 20px;
   margin-top: 20px
 }
+
+.restart-link{
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  font-weight: bold;
+}
+
+.preferences-wrapper{
+  float: left;
+  border-top: 1px solid #ccc;
+  background:#f3f3f3;
+  padding:20px;
+  width: 100%
+}
+
+.btn-filter{
+  width: 100%;
+  height: 50px;
+  color: #40b4e5;
+}

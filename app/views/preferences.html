@@ -1,110 +1,18 @@
-
-<div class="detail-view">
+<div class="preferences-view">
 	<div class="col-sm-12">
 		<div class="row">
 			<div class="list-header">
 				<div class="back-ico" data-ng-click="goTo('estatesList')"></div>
-				<h1 class="pull-left detail-title">Detalle</h1>
-				<div class="pref-ico pull-right"></div>
+				<h1 class="pull-left detail-title">Preferencias</h1>
+				<p class="blue-text restart-link">Reiniciar</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="detail-card">
-				<img src="{{selectedEstate.cover}}" alt="">
-				<div class="estate-specs">
-					<div class="general-details">
-						<div class="like-ico-wrapper" >
-							<div class="like-ico" data-ng-class="{active:selectedEstate.starred}" data-ng-click="toggleActive(estate, $event)"></div>
-						</div>
-						<div class="spec-row price">
-							<div class="home-ico"></div>
-							<p><b>{{selectedEstate.municipality}}, {{selectedEstate.type}}</b></p>
-							<p><b>$ 3,000,000<sup>00</sup></b> MXN</p>
-						</div>
-						<div class="spec-row dimensions">
-							<div class="dimensions-ico"></div>
-							<p><span>{{selectedEstate.dimension}}m<sup>2</sup></span> |  Superficie de terreno</p>
-							<p><span>{{selectedEstate.dimension}}m<sup>2</sup></span> |  Superficie de construida</p>
-							
-						</div>
-						<div class="spec-row age">
-							<div class="age-ico"></div>
-							<p class="age-row"><b>5 años</b> |  Antigüedad</p>
-						</div>
-					</div>
-					<div class="particular-details">
-						<div class="spec-row rooms">
-							<div class="rooms-ico"></div>
-							<p><b>{{selectedEstate.rooms}}</b> Recámaras</p>
-						</div>
-						<div class="spec-row bathrooms">
-							<div class="bathroom-ico"></div>
-							<p><b>{{selectedEstate.bathrooms}}</b> Baños </p>
-						</div>
-						<div class="spec-row parking last">
-							<div class="parking-ico"></div>
-							<p><b>2</b> Estacionamiento</p>
-						</div>
-						<div class="extras">
-							<div class="extra-item">
-								<div class="check-ico"></div>
-								<p>Alberca</p>
-							</div>
-							<div class="extra-item">
-								<div class="check-ico"></div>
-								<p>Estudio</p>
-							</div>
-							<div class="extra-item">
-								<div class="check-ico"></div>
-								<p>Gimnasio</p>
-							</div>
-							<div class="extra-item">
-								<div class="check-ico"></div>
-								<p>Fracc.</p>
-							</div>
-						</div>
-						<div class="address">
-							<div class="address-ico"></div>
-							<p>Av.Kinmic 2, 77507 <br>Cancún, Q. R.</p>
-						</div>
-					</div>
-					<img src="../images/country/map.png" alt="">
+			<div class="preferences-wrapper">
+				<p>Ver resultados</p>
+				<button class="btn btn-default btn-filter" type="submit">Filtrar por región</button>
 			</div>
-			<div class="contact-data">
-				<p class="info-text"><b>¿Necesitas más información</b> <br>Acude a nuestro centro de venta o márcanos</p>
-				<div class="info-card">
-					<div class="info-row">
-						<div class="gerency-ico"></div>
-						<h3>Gerente de Ventas</h3>
-						<h4>Lic. Juan Carlos Trujillo</h4>
-					</div>
-					<div class="info-row">
-						<div class="phone-ico"></div>
-						<h3>Teléfono</h3>
-						<h4 class="blue-text">(998) 8022716</h4>
-					</div>
-					
-					<div class="info-row">
-						<div class="address-ico"></div>
-						<h3>Dirección</h3>
-						<h4 class="no-border">Av. Nichupté, Mza 16 lote /-13 <br>
-						Local 20, Plaza Nichupté, Cancún <br>
-						Quintana Roo. C. P. 77500</h4>
-					</div>
-				</div>
-			</div>
-			<div class="slider-wrapper">
-				<h2>También te recomendamos</h2>
-				<div class="slider-row">
-					<div class="slides-wrapper">
-						<img src="../images/slider/villahermosa.jpg" alt="">
-						<img src="../images/slider/__Cancun2.jpg" alt="">
-						<img src="../images/slider/_PlayaCarmen.jpg" alt="">
-						<img src="../images/slider/_Cozumel.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="rent-button">Rentar</div>
+
 		</div>
 	</div>
 </div>
