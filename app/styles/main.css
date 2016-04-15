@@ -187,24 +187,24 @@ body {
 }
 
 .home-ico{
-  mask-image: url(../images/icos/Ico_Home.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Home.svg);
+  mask-image: url(/images/icos/Ico_Home.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Home.svg);
 
 }
 
 .badge-ico{
-  mask-image: url(../images/icos/Ico_Destacados.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Destacados.svg);
+  mask-image: url(/images/icos/Ico_Destacados.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Destacados.svg);
 }
 
 .favourite-ico{
-  mask-image: url(../images/icos/Ico_Estrella.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Estrella.svg);
+  mask-image: url(/images/icos/Ico_Estrella.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Estrella.svg);
 }
 
 .user-ico{
-  mask-image: url(../images/icos/Ico_Perfil.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Perfil.svg);
+  mask-image: url(/images/icos/Ico_Perfil.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Perfil.svg);
 }
 
 .estate-card{
@@ -230,8 +230,8 @@ body {
   width: 25px;
   height: 25px;
   background-color:#007cba;
-  mask-image: url(../images/icos/Ico_Regresar.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Regresar.svg);
+  mask-image: url(/images/icos/Ico_Regresar.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Regresar.svg);
    mask-size: 220%;
   -webkit-mask-size: 220%;
   -webkit-mask-position: -14px -14px;
@@ -245,8 +245,8 @@ body {
   width: 25px;
   height: 20px;
   background-color:#007cba;
-  mask-image: url(../images/icos/Ico_Preferencias.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Preferencias.svg);
+  mask-image: url(/images/icos/Ico_Preferencias.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Preferencias.svg);
    mask-size: 200%;
   -webkit-mask-size: 200%;
   -webkit-mask-position: -14px -14px;
@@ -258,8 +258,8 @@ body {
   height: 55px;
   margin-left: -14px;
   background-color: #b3b2b1;
-  mask-image: url(../images/icos/Ico_Megusta.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Megusta.svg);
+  mask-image: url(/images/icos/Ico_Megusta.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Megusta.svg);
   mask-size: 140%;
   -webkit-mask-size: 116%;
   margin-top: -14px;
@@ -287,8 +287,8 @@ body {
   width: 45px;
   margin-left: 0px;
   margin-top:-5px;
-  mask-image: url(../images/icos/Ico_Casa.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Casa.svg);
+  mask-image: url(/images/icos/Ico_Casa.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Casa.svg);
    mask-size: 145%;
   -webkit-mask-size: 145%;
 }
@@ -354,8 +354,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Casa.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Casa.svg);
+  mask-image: url(/images/icos/Ico_Casa.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Casa.svg);
   float: left;
   margin-top: 5px;
 
@@ -370,8 +370,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Medidas.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Medidas.svg);
+  mask-image: url(/images/icos/Ico_Medidas.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Medidas.svg);
   float: left;
   margin-top: 5px;
 
@@ -402,8 +402,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Recamara.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Recamara.svg);
+  mask-image: url(/images/icos/Ico_Recamara.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Recamara.svg);
   float: left;
 }
 
@@ -416,8 +416,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Banio.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Banio.svg);
+  mask-image: url(/images/icos/Ico_Banio.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Banio.svg);
   float: left;
 }
 
@@ -430,8 +430,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Cochera.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Cochera.svg);
+  mask-image: url(/images/icos/Ico_Cochera.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Cochera.svg);
   float: left;
 }
 
@@ -444,8 +444,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_SinSeleccion.svg);
-  -webkit-mask-image: url(../images/icos/Ico_SinSeleccion.svg);
+  mask-image: url(/images/icos/Ico_SinSeleccion.svg);
+  -webkit-mask-image: url(/images/icos/Ico_SinSeleccion.svg);
   float: left;
 }
 
@@ -458,8 +458,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Geolocalizacion.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Geolocalizacion.svg);
+  mask-image: url(/images/icos/Ico_Geolocalizacion.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Geolocalizacion.svg);
   float: left;
 }
 
@@ -632,8 +632,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Gerente.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Gerente.svg);
+  mask-image: url(/images/icos/Ico_Gerente.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Gerente.svg);
   float: left;
 }
 
@@ -646,8 +646,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Geolocalizacion.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Geolocalizacion.svg);
+  mask-image: url(/images/icos/Ico_Geolocalizacion.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Geolocalizacion.svg);
   float: left;
 }
 
@@ -660,8 +660,8 @@ body {
   -webkit-mask-size: 220%;
   mask-position: -18px -17px;
   -webkit-mask-position: -18px -17px;
-  mask-image: url(../images/icos/Ico_Telefono.svg);
-  -webkit-mask-image: url(../images/icos/Ico_Telefono.svg);
+  mask-image: url(/images/icos/Ico_Telefono.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Telefono.svg);
   float: left;
 }
 
