@@ -224,46 +224,51 @@ body {
 }
 
 .back-ico{
-  float: left;
+  left: 25px;
+  top: 25px;
+  position:absolute;
   width: 25px;
   height: 25px;
   background-color:#007cba;
   mask-image: url(../images/icos/Ico_Regresar.svg);
   -webkit-mask-image: url(../images/icos/Ico_Regresar.svg);
-   mask-size: 145%;
+   mask-size: 220%;
   -webkit-mask-size: 220%;
   -webkit-mask-position: -14px -14px;
   mask-position: -14px -14px;
 }
 
 .pref-ico{
-  float: left;
-  width: 55px;
-  height: 55px;
+  position: absolute;
+  top:30px;
+  right: 25px;
+  width: 25px;
+  height: 20px;
   background-color:#007cba;
   mask-image: url(../images/icos/Ico_Preferencias.svg);
   -webkit-mask-image: url(../images/icos/Ico_Preferencias.svg);
-   mask-size: 140%;
-  -webkit-mask-size: 140%;
-  margin-right: 20px
+   mask-size: 200%;
+  -webkit-mask-size: 200%;
+  -webkit-mask-position: -14px -14px;
+  mask-position: -14px -14px;
 }
 
 .like-ico{
-    width: 55px;
-    height: 55px;
-    margin-left: -14px;
-    background-color: #b3b2b1;
-    mask-image: url(../images/icos/Ico_Megusta.svg);
-    -webkit-mask-image: url(../images/icos/Ico_Megusta.svg);
-    mask-size: 140%;
-    -webkit-mask-size: 116%;
-    margin-top: -14px;
-    -webkit-transition:all ease 0.5s;
+  width: 55px;
+  height: 55px;
+  margin-left: -14px;
+  background-color: #b3b2b1;
+  mask-image: url(../images/icos/Ico_Megusta.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Megusta.svg);
+  mask-size: 140%;
+  -webkit-mask-size: 116%;
+  margin-top: -14px;
+  -webkit-transition:all ease 0.5s;
   transition:all ease 0.5s;
 }
 
 .like-ico.active{
-  background-color: #007cba;
+  background-color: #edb725;
 }
 
 .estate-specs{
@@ -306,12 +311,13 @@ body {
 }
 
 .detail-title{
-    font-size: 15px;
-    color: #333;
-    font-weight: bold;
-    margin-left: 55px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
 }
 
 .like-ico-wrapper{
@@ -330,4 +336,401 @@ body {
   height: 65px;
   width: 100%;
   position: relative;
+}
+
+.detail-card{
+  width: 100%;
+  overflow: hidden;
+  float: left 
+}
+
+
+.detail-card .home-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Casa.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Casa.svg);
+  float: left;
+  margin-top: 5px;
+
+}
+
+.detail-card .dimensions-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Medidas.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Medidas.svg);
+  float: left;
+  margin-top: 5px;
+
+}
+
+.detail-card .age-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Tiempo.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Tiempo.svg);
+  float: left;
+  margin-top: 5px;
+
+}
+
+.particular-details .rooms-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Recamara.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Recamara.svg);
+  float: left;
+}
+
+.particular-details .bathroom-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Banio.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Banio.svg);
+  float: left;
+}
+
+.particular-details .parking-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Cochera.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Cochera.svg);
+  float: left;
+}
+
+.particular-details .check-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_SinSeleccion.svg);
+  -webkit-mask-image: url(../images/icos/Ico_SinSeleccion.svg);
+  float: left;
+}
+
+.particular-details .address-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Geolocalizacion.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Geolocalizacion.svg);
+  float: left;
+}
+
+.detail-card .like-ico-wrapper{
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: -19px;
+  right: 0px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 19px;
+  right: 20px;
+}
+
+.detail-card .estate-specs{
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: auto
+}
+
+.detail-card .estate-specs h2{
+  font-size: 12px;
+  color: #007cba;
+  margin-left: 15px;
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
+.detail-card .estate-specs h3{
+  color: #333;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px
+}
+
+.detail-card .general-details{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.spec-row{
+  float: left;
+  width: 100%;
+  display: block;
+  margin:20px 0 0 20px;
+}
+
+.spec-row p{
+    float: left;
+    margin:0px 0px 2px 20px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    margin-top: 3px;
+    width: 80%;
+}
+
+.spec-row .age-row {
+  margin-top: 10px;
+}
+
+.spec-row span{
+  width: 50px;
+  font-weight: bold;
+  float: left;
+}
+
+.general-details{
+  padding-bottom: 20px
+}
+
+.particular-details{
+  float: left;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color:#e5e5e5;
+  color: #555;
+  padding:20px;
+}
+
+
+.particular-details .spec-row{
+  margin:0px 0px 10px 0px;
+}
+
+.particular-details .spec-row.last{
+  border-bottom:1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.extras{
+  float: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.extra-item{
+  float: left;width:50%;
+}
+
+.extra-item p{
+  float: left;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+.address{
+  margin-top:15px;
+  float: left;
+  width:100%;
+}
+
+.address p{
+ float: left;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px
+  }
+
+.estate-specs img{
+  width: 100%;
+  float: left;
+  border-top: 1px solid #ccc
+}
+
+.contact-data{
+  float: left;width: 100%;padding:20px;
+}
+
+.contact-data .info-text{
+  padding-bottom: 20px;
+  border-bottom:1px solid #ccc;
+  width: 100%
+}
+
+.gray-text{
+  color:#B2B3B1 !important;
+}
+
+.blue-text{
+  color:#40b4e5 !important;
+}
+
+.info-card h3{
+  font-size: 14px;
+  color:#B2B3B1;float: left;
+}
+
+.info-card h4{
+  font-size: 14px;
+  border-bottom:1px solid #CCC;float: left;
+}
+
+.info-row{
+  width: 100%;
+  float: left
+}
+
+.info-card .gerency-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Gerente.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Gerente.svg);
+  float: left;
+}
+
+.info-card .address-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Geolocalizacion.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Geolocalizacion.svg);
+  float: left;
+}
+
+.info-card .phone-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Telefono.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Telefono.svg);
+  float: left;
+}
+
+.info-row{
+  margin-top:20px;
+}
+
+.info-row h3{
+  margin-top:0px;
+  width: 80%;
+  margin-left: 20px;
+  margin-bottom:0px;
+}
+
+.info-row h4{
+  margin-top:0px;
+  width: 80%;
+  padding-bottom:20px;
+  margin-left: 20px;
+  margin-top: 0px;
+  color:#282828;
+}
+
+.no-border{
+  border: none
+}
+
+.slider-wrapper{
+  float: left;
+  width: 100%;
+  background:#282828;
+  padding:20px;
+  overflow: hidden;
+}
+
+.slider-wrapper h2{
+  float: left;
+  color: #b2b3b1;
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.slides-wrapper{
+  float: left;
+  height: 100px;
+  width: 710px;
+}
+
+.slides-wrapper img{
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+}
+
+.slider-row{
+  height: 100px;
+  width: 100%;
+  overflow-x:scroll;
+}
+
+.rent-button{
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding:15px 0;
+  color: white;
+  font-weight: bold;
+  height:60px;
+  background-color: #3fae2a;
+  font-size: 20px;
+  margin-top: 20px
 }

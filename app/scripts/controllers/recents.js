@@ -18,9 +18,11 @@ angular.module('easyMoveApp')
 
     $scope.serviceUrlRoot = "http://jsonstub.com/"
 
+    $scope.currentView = "statesList"
+
     $scope.stateList = [];
-    $scope.stateSelected = false;
     $scope.selectedState = {};
+    $scope.selectedEstate = {};
     $scope.estatesList = [];
 
     $http({
@@ -41,7 +43,7 @@ angular.module('easyMoveApp')
     $scope.stateDetail = function(selectedState) {
         /*console.log(selectedState)
          */
-        $scope.stateSelected = true;
+        $scope.currentView = "estatesList"
         $scope.selectedState = $scope.stateList[selectedState];
         console.log($scope.selectedState)
         $http({
@@ -61,16 +63,14 @@ angular.module('easyMoveApp')
         });
     }
 
-    $scope.munDetail = function(selectedMun){
-      /*console.log(selectedState)
-      */
-      $scope.munSelected = true;
-      $scope.selectedMun = $scope.selectedState.municipalities;
-      console.log($scope.selectedMun)
+    $scope.estateDetail = function(selectedEstate){
+      $scope.currentView = "estateDetail";
+      $scope.selectedEstate = $scope.estatesList[selectedEstate];
+      console.log($scope.selectedEstate)
     }
 
-    $scope.returnTo = function(destiny){
-      $location.path(destiny)
+    $scope.goTo = function(destiny){
+      $scope.currentView = destiny
     }
 
     $scope.toggleActive= function(selection, $event){
@@ -82,18 +82,6 @@ angular.module('easyMoveApp')
       } else {
         selection.starred = false
       }
- 
-      /*if(!$(selectedIco).hasClass("active")){
-        $(selectedIco).addClass("active")
-        console.log("inactive")
-        console.log(selectedIco)
-      } 
-
-      if($(selectedIco).hasClass("active")){
-        $(selectedIco).removeClass("active")
-        console.log("active")
-        console.log(selectedIco)
-      }*/
     }
 
     /*$scope.scrollPos = 0;
