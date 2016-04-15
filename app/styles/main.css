@@ -755,3 +755,41 @@ body {
   height: 50px;
   color: #40b4e5;
 }
+
+.result-btn-wrapper, .type-btn-wrapper{
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  height: 50px;
+  margin-top: 10px
+}
+
+
+.result-btn-wrapper .btn, .type-btn-wrapper .btn {
+  width: 50%;
+  border-radius: 0px;
+  border: none;
+  height: 50px;
+    -webkit-transition:all ease 0.5s;
+  transition:all ease 0.2s;
+}
+
+/*.btn-wrapper .btn:active, .btn-wrapper .btn:hover{
+  box-shadow: none;
+  background: none;
+  background:#40b4e5;
+  color: white;
+}*/
+
+.btn-wrapper .btn.active{
+  background:none;
+  background:#40b4e5;
+  box-shadow: none;
+  color: white;
+}
+
+.specs-selector{
+  width: 90%;
+}
