@@ -11,8 +11,20 @@
 			<div class="preferences-wrapper">
 				<p>Ver resultados</p>
 				<button class="btn btn-default btn-filter" type="submit">Filtrar por región</button>
+				<p>Mostrar resultados para</p>
+				<div class="btn-wrapper result-btn-wrapper">
+					<button class="btn btn-default btn-rent pull-left"  data-ng-class="{active:btnRent}" data-ng-click="btnRent = true;btnBuy = false">Rentar</button>
+					<button class="btn btn-default btn-buy pull-right" data-ng-class="{active:btnBuy}" data-ng-click="btnRent = false;btnBuy = true">Comprar</button>
+				</div>
+				<div class="btn-wrapper type-btn-wrapper">
+					<button class="btn btn-default btn-casa pull-left" data-ng-class="{active:btnHouse}" data-ng-click="btnHouse = true;btnDep = false">Casa</button>
+					<button class="btn btn-default btn-departamento pull-right" data-ng-class="{active:btnDep}" data-ng-click="btnHouse = false;btnDep = true">Departamento</button>
+				</div>
+				<p>Quiero que tenga</p>
+				<div class="specs-selector">
+					<div class="spec"></div>
+				</div>
 			</div>
-
 		</div>
 	</div>
 </div>
