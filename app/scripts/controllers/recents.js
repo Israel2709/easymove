@@ -79,8 +79,6 @@ angular.module('easyMoveApp')
           // });
     }
 
-    
-
     $scope.estateDetail = function(selectedEstate){
       $scope.currentView = "estateDetail";
       $scope.selectedEstate = $scope.estatesList[selectedEstate];
