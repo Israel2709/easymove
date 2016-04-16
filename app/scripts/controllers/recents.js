@@ -84,6 +84,8 @@ angular.module('easyMoveApp')
       }
     }
 
+    $scope.alberca = true;
+
     /*$scope.scrollPos = 0;
     $scope.lastScroll = 0;
     $window.onscroll = function() {

@@ -9,9 +9,9 @@
 		</div>
 		<div class="row">
 			<div class="preferences-wrapper">
-				<p>Ver resultados</p>
+				<p class="marginB0">Ver resultados</p>
 				<button class="btn btn-default btn-filter" type="submit">Filtrar por región</button>
-				<p>Mostrar resultados para</p>
+				<p class="marginB0">Mostrar resultados para</p>
 				<div class="btn-wrapper result-btn-wrapper">
 					<button class="btn btn-default btn-rent pull-left"  data-ng-class="{active:btnRent}" data-ng-click="btnRent = true;btnBuy = false">Rentar</button>
 					<button class="btn btn-default btn-buy pull-right" data-ng-class="{active:btnBuy}" data-ng-click="btnRent = false;btnBuy = true">Comprar</button>
@@ -20,10 +20,34 @@
 					<button class="btn btn-default btn-casa pull-left" data-ng-class="{active:btnHouse}" data-ng-click="btnHouse = true;btnDep = false">Casa</button>
 					<button class="btn btn-default btn-departamento pull-right" data-ng-class="{active:btnDep}" data-ng-click="btnHouse = false;btnDep = true">Departamento</button>
 				</div>
+				<p>Rango de precio</p>
+				<img src="/images/country/rango.png" alt="" class="rank-img">
 				<p>Quiero que tenga</p>
 				<div class="specs-selector">
-					<div class="spec"></div>
+					<div class="spec">
+						<p>Alberca</p>
+						<div data-ng-click="console.log($scope.alberca)" data-ng-if="!alberca" class="unchecked"></div>
+						<div data-ng-click="console.log($scope.alberca)" data-ng-if="alberca" class="check-ico pull-right"></div>
+					</div>
+					<div class="spec">
+						<p>Gimnasio</p>
+						<div data-ng-click="console.log($scope.alberca)" class="unchecked"></div>
+					</div>
+					<div class="spec">
+						<p>Seguridad</p>
+						<div data-ng-click="console.log($scope.alberca)" class="unchecked"></div>
+					</div>
+					<div class="spec">
+						<p>Vista al mar</p>
+						<div data-ng-click="console.log($scope.alberca)" class="unchecked"></div>
+					</div>
+					<div class="spec">
+						<p>Centro comercial cerca</p>
+						<div data-ng-click="console.log($scope.alberca)" class="unchecked"></div>
+					</div>
+					<p class="blue-text">Mostrar más opciones</p>
 				</div>
+				<div class="save-button">Guardar</div>
 			</div>
 		</div>
 	</div>
