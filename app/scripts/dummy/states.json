@@ -1,0 +1,43 @@
+{
+	"states": [{
+		"stateID": 1,
+		"name": "Quintana Roo",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/quintana_roo_zpsgtycs9sf.jpg"
+	}, {
+		"stateID": 2,
+		"name": "Chihuahua",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/chihuahua_zpsdjpmq27c.jpg"
+	}, {
+		"stateID": 3,
+		"name": "Baja California Norte",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/baja_california_norte_zpsmpbfdyho.jpg"
+	}, {
+		"stateID": 4,
+		"name": "Baja California Sur",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/baja_california_sur_zpsmunuke03.jpg"
+	}, {
+		"stateID": 5,
+		"name": "Veracruz",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/veracruz_zpskrrrl8nt.jpg"
+	}, {
+		"stateID": 6,
+		"name": "Tabasco",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/tabasco_zpsr0njmcug.jpg"
+	}, {
+		"stateID": 7,
+		"name": "Ciudad de México",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/distrito_federal_zpso7lofzlv.jpg"
+	}, {
+		"stateID": 8,
+		"name": "Monterrey",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/monterrey_zpsqqow3p8a.jpg"
+	}, {
+		"stateID": 9,
+		"name": "Guadalajara",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/guadalajara_zpsyppnljl4.jpg"
+	}, {
+		"stateID": 10,
+		"name": "Coahuila",
+		"url": "http://i1175.photobucket.com/albums/r623/rvacoder/state_covers/blur/coahuila_zpscl52rso2.jpg"
+	}]
+}

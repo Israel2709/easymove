@@ -1,0 +1,48 @@
+{
+	"estates": [{
+		"id": 1,
+		"municipality": "Yikal",
+		"type": "department",
+		"starred": true,
+		"dimension": 700,
+		"rooms": 4,
+		"bathrooms": 4,
+		"cover": "http://i1175.photobucket.com/albums/r623/rvacoder/estates/estate4_zpsyzws5ogw.jpg"
+	}, {
+		"id": 2,
+		"municipality": "Del Bosque",
+		"type": "house",
+		"starred": false,
+		"dimension": 3400,
+		"rooms": 10,
+		"bathrooms": 8,
+		"cover": "http://i1175.photobucket.com/albums/r623/rvacoder/estates/estate2_zpsl7bsjpvm.jpg"
+	}, {
+		"id": 3,
+		"municipality": "Del Bosque",
+		"type": "house",
+		"starred": false,
+		"dimension": 1400,
+		"rooms": 5,
+		"bathrooms": 3,
+		"cover": "http://i1175.photobucket.com/albums/r623/rvacoder/estates/estate5_zpsraqfeful.jpg"
+	}, {
+		"id": 4,
+		"municipality": "Yikal",
+		"type": "department",
+		"starred": false,
+		"dimension": 700,
+		"rooms": 5,
+		"bathrooms": 5,
+		"cover": "http://i1175.photobucket.com/albums/r623/rvacoder/estates/estate7_zpspeftkgjf.jpg"
+	}, {
+		"id": 5,
+		"municipality": "Yikal",
+		"type": "department",
+		"starred": false,
+		"dimension": 700,
+		"rooms": 4,
+		"bathrooms": 3,
+		"cover": "http://i1175.photobucket.com/albums/r623/rvacoder/estates/estate8_zpsdmvxzaxe.jpg"
+	}]
+}
