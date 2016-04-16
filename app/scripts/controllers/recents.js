@@ -26,7 +26,7 @@ angular.module('easyMoveApp')
     $scope.estatesList = [];
 
     $http({
-        url: $scope.serviceUrlRoot+"statesx",
+        url: $scope.serviceUrlRoot+"states",
         method: 'GET',
         dataType: 'json',
         data: '',
@@ -55,7 +55,7 @@ angular.module('easyMoveApp')
         $scope.selectedState = $scope.stateList[selectedState];
         console.log($scope.selectedState)
         $http({
-            url: $scope.serviceUrlRoot + "estates/_idx",
+            url: $scope.serviceUrlRoot + "estates/_id",
             method: 'GET',
             dataType: 'json',
             data: '',
