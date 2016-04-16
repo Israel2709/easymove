@@ -72,7 +72,7 @@ angular.module('easyMoveApp')
         //   }, function errorCallback(response) {
             // called asynchronously if an error occurs
             // or server returns response with an error status.
-            console.log("ERROR > "+JSON.stringify(response));
+            // console.log("ERROR > "+JSON.stringify(response));
             $http.get('/scripts/dummy/estates.json').success(function (data){
                  $scope.estatesList = data.estates
             });
