@@ -1,4 +1,31 @@
 <div class="preferences-view">
+	<div class="preferences-modal">
+		<h2><b>Filtrar</b></h2>
+		<h3>Ver resultados por región</h3>
+		<div class="specs-selector">
+			<div class="spec">
+				<p>Todos</p>
+				<div class="unchecked"  data-ng-click="$scope.filterBy='all'" data-ng-class="{'check-ico':filterBy='all'}"></div>
+				
+				<!--div data-ng-click="triggercheckbox()" data-ng-if="filterBy = 'all'" class="'check-ico' pull-right"></div-->
+			</div>
+			<div class="spec">
+				<p>Cancún</p>
+				<div class="unchecked"  data-ng-click="$scope.filterBy='cancun'" data-ng-class="{'check-ico':filterBy='cancun'}"></div>
+				
+			</div>
+			<div class="spec">
+				<p>Playa del Carmen</p>
+				<div class="unchecked"  data-ng-click="$scope.filterBy='playa'" data-ng-class="{'check-ico':filterBy='playa'}"></div>
+				
+			</div>
+			<div class="spec">
+				<p>Cozumel</p>
+				<div class="unchecked"  data-ng-click="$scope.filterBy='cozumel'" data-ng-class="{'check-ico':filterBy='cozumel'}"></div>
+				
+			</div>
+		</div>
+	</div>
 	<div class="col-sm-12">
 		<div class="row">
 			<div class="list-header">
@@ -20,7 +47,7 @@
 					<button class="btn btn-default btn-casa pull-left" data-ng-class="{active:btnHouse}" data-ng-click="btnHouse = true;btnDep = false">Casa</button>
 					<button class="btn btn-default btn-departamento pull-right" data-ng-class="{active:btnDep}" data-ng-click="btnHouse = false;btnDep = true">Departamento</button>
 				</div>
-				<p>Rango de precio</p>
+				<p class="text-center">Rango de precio</p>
 				<img src="/images/country/rango.png" alt="" class="rank-img">
 				<p>Quiero que tenga</p>
 				<div class="specs-selector">

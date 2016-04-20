@@ -18,7 +18,7 @@ angular.module('easyMoveApp')
 
     $scope.serviceUrlRoot = "http://jsonstub.com/"
 
-    $scope.currentView = "statesList"
+    $scope.currentView = "preferences"
 
     $scope.stateList = [];
     $scope.selectedState = {};
@@ -84,8 +84,7 @@ angular.module('easyMoveApp')
       }
     }
 
-    $scope.alberca = true;
-
+    $scope.filterBy = "all";
     /*$scope.scrollPos = 0;
     $scope.lastScroll = 0;
     $window.onscroll = function() {
