@@ -39,6 +39,11 @@ angular
         controller: 'RecentsCtrl',
         controllerAs: 'recents'
       })*/
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'RecentsCtrl',
+        controllerAs: 'recents'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -18,12 +18,14 @@ angular.module('easyMoveApp')
 
     $scope.serviceUrlRoot = "https://jsonstub.com/"
 
-    $scope.currentView = "preferences"
+    $scope.currentView = "login"
 
     $scope.stateList = [];
     $scope.selectedState = {};
     $scope.selectedEstate = {};
     $scope.estatesList = [];
+    $scope.userData = {}
+    $scope.loginData = {}
 
   //   $http({
   //       url: $scope.serviceUrlRoot+"states",
@@ -46,6 +48,10 @@ angular.module('easyMoveApp')
     $http.get('/scripts/dummy/states.json').success(function (data){
          $scope.stateList = data.states
     });
+
+    $http.get('/scripts/dummy/userData.json').success(function (data){
+                 $scope.userData = data
+            });
   // });
 
     $scope.stateDetail = function(selectedState) {
@@ -87,6 +93,11 @@ angular.module('easyMoveApp')
 
     $scope.goTo = function(destiny){
       $scope.currentView = destiny
+      if(destiny == "user-profile"){
+        $http.get('/scripts/dummy/userData.json').success(function (data){
+                 $scope.userData = data
+            });
+      }
     }
 
     $scope.toggleActive= function(selection, $event){
@@ -101,6 +112,33 @@ angular.module('easyMoveApp')
     }
 
     $scope.filterBy = "all";
+
+    $scope.showModal = function(modalId,yPosition){
+      $(modalId).css({
+        "margin-top":yPosition
+      })
+    }
+
+    $scope.closeFilter = function(){
+      setTimeout(function(){
+        $("#preferences-modal").css({
+          "margin-top":"-749px"
+        })
+      },400)
+    }
+
+    $scope.submitLogin = function (){
+      if(!$scope.loginData.name){
+        $scope.goTo('user-profile')
+      } else {
+        debugger
+        $scope.userData.name = $scope.loginData.name;
+        $scope.userData.picture = "../images/login/anon-user.png";
+        $scope.goTo('user-profile')
+      }
+    }
+
+   // $scope.preferences = {}
     /*$scope.scrollPos = 0;
     $scope.lastScroll = 0;
     $window.onscroll = function() {

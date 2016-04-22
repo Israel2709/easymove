@@ -1,0 +1,37 @@
+<div class="login-view">
+	<div class="col-sm-12">
+		<div class="row">
+			<div class="profile-header">
+				<div class="back-ico" data-ng-click="goTo('statesList')"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="main-logo">
+				<img src="/images/login/main-logo.png" alt="">
+			</div>
+			<div class="login-form">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="sr-only" for="username">Usuario</label>
+						<div class="input-group">
+							<div class="user-ico"></div>
+							<input type="text" class="form-control" id="username" placeholder="Usuario" data-ng-model="loginData.name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="password">Contraseña</label>
+						<div class="input-group">
+							<div class="lock-ico"></div>
+							<input type="password" class="form-control" id="Password" placeholder="Contraseña">
+						</div>
+					</div>
+				</form>
+				<button class="btn btn-default save-form" data-ng-click="submitLogin()">Entrar</button>
+			</div>
+			<button class="btn btn-default create-account">Crear cuenta</button>
+			<div class="terms">
+				<span>Términos y condiciones |</span><span>Políticas de privacidad</span><br><span>San Jorge Construcciones S. A. de C. V.</span>
+			</div>
+		</div>
+	</div>
+</div>
