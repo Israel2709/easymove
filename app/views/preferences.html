@@ -1,28 +1,25 @@
 <div class="preferences-view">
-	<div class="preferences-modal">
+	<div id="preferences-modal" class="preferences-modal">
+
 		<h2><b>Filtrar</b></h2>
 		<h3>Ver resultados por región</h3>
+		<div class="top-frame"></div>
 		<div class="specs-selector">
 			<div class="spec">
 				<p>Todos</p>
-				<div class="unchecked"  data-ng-click="$scope.filterBy='all'" data-ng-class="{'check-ico':filterBy='all'}"></div>
-				
-				<!--div data-ng-click="triggercheckbox()" data-ng-if="filterBy = 'all'" class="'check-ico' pull-right"></div-->
+				<div class="unchecked" data-ng-class="{'check-ico':filterBy=='all'}" data-ng-click="filterBy='all'; closeFilter()"></div>
 			</div>
 			<div class="spec">
 				<p>Cancún</p>
-				<div class="unchecked"  data-ng-click="$scope.filterBy='cancun'" data-ng-class="{'check-ico':filterBy='cancun'}"></div>
-				
+				<div class="unchecked" data-ng-class="{'check-ico':filterBy=='cancun'}" data-ng-click="filterBy='cancun'; closeFilter()"></div>				
 			</div>
 			<div class="spec">
 				<p>Playa del Carmen</p>
-				<div class="unchecked"  data-ng-click="$scope.filterBy='playa'" data-ng-class="{'check-ico':filterBy='playa'}"></div>
-				
+				<div class="unchecked" data-ng-class="{'check-ico':filterBy=='playa'}" data-ng-click="filterBy='playa'; closeFilter()"></div>
 			</div>
 			<div class="spec">
 				<p>Cozumel</p>
-				<div class="unchecked"  data-ng-click="$scope.filterBy='cozumel'" data-ng-class="{'check-ico':filterBy='cozumel'}"></div>
-				
+				<div class="unchecked" data-ng-class="{'check-ico':filterBy=='cozumel'}" data-ng-click="filterBy='cozumel'; closeFilter()"></div>
 			</div>
 		</div>
 	</div>
@@ -37,7 +34,7 @@
 		<div class="row">
 			<div class="preferences-wrapper">
 				<p class="marginB0">Ver resultados</p>
-				<button class="btn btn-default btn-filter" type="submit">Filtrar por región</button>
+				<button class="btn btn-default btn-filter" data-ng-click="showModal('#preferences-modal','77px')">Filtrar por región</button>
 				<p class="marginB0">Mostrar resultados para</p>
 				<div class="btn-wrapper result-btn-wrapper">
 					<button class="btn btn-default btn-rent pull-left"  data-ng-class="{active:btnRent}" data-ng-click="btnRent = true;btnBuy = false">Rentar</button>
@@ -53,28 +50,27 @@
 				<div class="specs-selector">
 					<div class="spec">
 						<p>Alberca</p>
-						<div data-ng-click="console.log($scope.alberca)" data-ng-if="!alberca" class="unchecked"></div>
-						<div data-ng-click="console.log($scope.alberca)" data-ng-if="alberca" class="check-ico pull-right"></div>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.pool}"><input type="checkbox" data-ng-model="preferences.pool" class="no-opacity"></div>
 					</div>
 					<div class="spec">
 						<p>Gimnasio</p>
-						<div data-ng-click="console.log($scope.alberca)" class="unchecked"></div>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.gym}"><input type="checkbox" data-ng-model="preferences.gym" class="no-opacity"></div>
 					</div>
 					<div class="spec">
 						<p>Seguridad</p>
-						<div data-ng-click="console.log($scope.alberca)" class="unchecked"></div>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.security}"><input type="checkbox" data-ng-model="preferences.security" class="no-opacity"></div>
 					</div>
 					<div class="spec">
 						<p>Vista al mar</p>
-						<div data-ng-click="console.log($scope.alberca)" class="unchecked"></div>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.sea}"><input type="checkbox" data-ng-model="preferences.sea" class="no-opacity"></div>
 					</div>
 					<div class="spec">
 						<p>Centro comercial cerca</p>
-						<div data-ng-click="console.log($scope.alberca)" class="unchecked"></div>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.mall}"><input type="checkbox" data-ng-model="preferences.mall" class="no-opacity"></div>
 					</div>
 					<p class="blue-text">Mostrar más opciones</p>
 				</div>
-				<div class="save-button">Guardar</div>
+				<div class="save-button" data-ng-click="goTo('estatesList')">Guardar</div>
 			</div>
 		</div>
 	</div>

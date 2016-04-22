@@ -832,11 +832,14 @@ body {
 
 .spec .unchecked{
   width: 29px;
-    height: 29px;
-    border: 1px solid #40b4e5;
-    border-radius: 20px;
-    float: right;
-    margin-top: 2px;
+  height: 29px;
+  border: 1px solid #40b4e5;
+  border-radius: 20px;
+  float: right;
+  margin-top: 2px;
+  -webkit-transition:background-color ease 0.5s;
+  transition:background-color ease 0.5s;
+  overflow: hidden;
 }
 
 .spec{
@@ -876,12 +879,16 @@ body {
 
 .preferences-modal{
   width: 100%;
-  height: 826px;
+  height: 749px;
   background: rgba(55,55,55,.8);
   float: left;
   padding: 20px;
   z-index: 9000;
   position: absolute;
+  margin-top: -500px;
+  margin-top:-749px;
+  -webkit-transition:all ease 1s;
+  transition:all ease 1s;
 }
 
 .preferences-modal h2, .preferences-modal h3{
@@ -890,4 +897,303 @@ body {
   text-align: center;
   margin-bottom:10px;
   margin-top: 0px
+}
+
+.top-frame{
+  width: 100%;
+  height: 15px;
+  float: left;
+  background: #282828;
+  border-radius: 5px 5px 0 0 ;
+}
+
+.no-opacity{
+  opacity: 0
+}
+
+.profile-header{
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+
+.user-pic{
+  width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 60px;
+    overflow: hidden;
+    display: block;
+    margin: 0px auto 0 auto;
+    box-shadow: 2px 2px 12px #55565a
+}
+
+.user-pic img{
+  width: 100%
+}
+
+.user-data h3{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color:#282828;
+  margin-top:5px;
+}
+
+.btn-contact-data, .btn-payment-data{
+  width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 15px;
+    position: relative;
+    height: 50px;
+    padding-bottom: 15px
+}
+
+.btn-payment-data{
+  border:none;
+}
+
+.btn-contact-data .user-ico{
+  position: absolute;
+    top: 10px;
+    left: 15px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Perfil.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Perfil.svg)
+}
+
+.btn-payment-data .card-ico{
+  position: absolute;
+    top: 10px;
+    left: 15px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Tarjeta.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Tarjeta.svg)
+}
+
+.user-profile-view, .contact-data-view, .login-view{
+  background: darkkhaki
+}
+
+.share{
+  float: left;
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+.share-links{
+  text-align: center;
+  color: #007cba;
+  font-weight: bold;
+}
+
+.close-session{
+      width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background: none;
+    background: #40b4e5;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.terms{
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  margin-top:20px;
+  margin-bottom: 20px
+}
+
+.profile-header h1{
+      margin-top: 50px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.data-row{
+  width: 90%;
+  display: block;
+  margin: 10px auto 0 auto;
+  position: relative;
+  border-bottom: 1px solid white;
+  height: 45px;
+  padding-left: 40px;
+  color: #282828;
+}
+
+.contact-data .user-ico{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Perfil.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Perfil.svg)
+}
+.contact-data .mail-ico{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Correo.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Correo.svg)
+}
+.contact-data .cel-ico{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Celular.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Celular.svg)
+}
+
+.contact-data .data-label{
+      font-size: 10px;
+    margin-bottom: 0px;
+}
+
+.info-text{
+  font-size: 11px;
+    color: white;
+    float: left;
+    width: 100%;
+}
+
+.contact-data-view .terms{
+  margin-top: 200px;
+}
+
+.login-form .user-ico{
+  z-index: 9999;
+  position: absolute;
+    top: 13px;
+    left: 35px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #B2B3B1;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Perfil.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Perfil.svg)
+}
+
+.login-form .lock-ico{
+  z-index: 9999;
+  position: absolute;
+    top: 13px;
+    left: 35px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #B2B3B1;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Candado.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Candado.svg)
+}
+.login-form {
+      width: 90%;
+    margin: 10px auto 0 auto;
+}
+
+.login-form .input-group{
+  width: 100%
+}
+
+.login-form input{
+  height: 55px;
+  padding-left: 80px;
+}
+
+.save-form{
+      width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background: none;
+    background: #3fae2a;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.create-account{
+      width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    background: none;
+    border: none;
+    color: #007cba;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }

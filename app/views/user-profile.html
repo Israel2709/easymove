@@ -1,0 +1,26 @@
+<div class="user-profile-view">
+	<div class="col-sm-12">
+		<div class="row">
+			<div class="profile-header">
+				<div class="back-ico" data-ng-click="goTo('statesList')"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="user-data">
+				<div class="user-pic"><img src="{{userData.picture}}" alt=""></div>
+				<h3>{{userData.name}}</h3>
+				<div class="additional-info">
+					<button class="btn btn-default btn-contact-data" data-ng-click="goTo('contact-data')"><div class="user-ico"></div>Datos de contacto</button>
+					<button class="btn btn-default btn-payment-data"><div class="card-ico"></div>Método de pago</button>
+				</div>
+			</div>
+			<div class="share">
+				<p class="share-links"><span>Ayuda App &nbsp;&nbsp;&nbsp;|</span><span>&nbsp;&nbsp;&nbsp;&nbsp;Comparte la App</span></p>
+			</div>
+			<button class="btn btn-default close-session" data-ng-click="goto('login')"><div class="user-ico"></div>Cerrar sesión</button>
+			<div class="terms">
+				<span>Términos y condiciones |</span><span>Políticas de privacidad</span><br><span>San Jorge Construcciones S. A. de C. V.</span>
+			</div>
+		</div>
+	</div>
+</div>
