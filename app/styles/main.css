@@ -997,13 +997,13 @@ body {
 }
 
 .user-profile-view, .contact-data-view, .login-view{
-  background: darkkhaki
+  background: url(/images/login/login-bckgnd.jpg) 100% 100%;
 }
 
 .share{
   float: left;
     width: 100%;
-    margin-top: 110px;
+    margin-top: 82px;
     margin-bottom: 30px;
 }
 
@@ -1118,7 +1118,7 @@ body {
 }
 
 .contact-data-view .terms{
-  margin-top: 200px;
+  margin-top: 176px;
 }
 
 .login-form .user-ico{
@@ -1196,4 +1196,13 @@ body {
     font-weight: bold;
     margin-top: 70px;
     margin-bottom: 50px;
+}
+
+.main-logo img{
+      width: 45%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }

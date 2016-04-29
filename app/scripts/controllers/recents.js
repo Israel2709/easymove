@@ -18,7 +18,7 @@ angular.module('easyMoveApp')
 
     $scope.serviceUrlRoot = "https://jsonstub.com/"
 
-    $scope.currentView = "login"
+    $scope.currentView = "statesList"
 
     $scope.stateList = [];
     $scope.selectedState = {};
