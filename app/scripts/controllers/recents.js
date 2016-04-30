@@ -85,6 +85,20 @@ angular.module('easyMoveApp')
           // });
     }
 
+    $scope.destacadosHome = function (){
+      $http.get('/scripts/dummy/estates.json').success(function (data){
+                 $scope.estatesList = data.estates
+            });
+      $scope.goTo('destacados')
+    }
+
+    $scope.selectionHome = function (){
+      $http.get('/scripts/dummy/estates.json').success(function (data){
+                 $scope.estatesList = data.estates
+            });
+      $scope.goTo('selection')
+    }
+
     $scope.estateDetail = function(selectedEstate){
       $scope.currentView = "estateDetail";
       $scope.selectedEstate = $scope.estatesList[selectedEstate];
